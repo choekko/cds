@@ -18,8 +18,13 @@ export default function Button({
   isFilled = true,
   isRounded = false,
   children,
+  ...props
 }: ButtonProps) {
-  return <button css={() => buttonCss({ scale, color, isFilled, isRounded })}>{children}</button>;
+  return (
+    <button css={() => buttonCss({ scale, color, isFilled, isRounded })} {...props}>
+      {children}
+    </button>
+  );
 }
 
 const buttonCss = ({ scale, color, isFilled, isRounded }: ButtonOptions) => css`
