@@ -1,10 +1,17 @@
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react';
+import Button from '@/cds/components/Button';
+import GlobalStyle from '@/cds/global/GlobalStyle';
 
 function TestBed() {
   return (
     <>
-      <div css={TestBedStyle}></div>
+      <GlobalStyle />
+      <div css={TestBedStyle}>
+        <Button scale={'h34'} isFilled={false} color={'blue'}>
+          버튼
+        </Button>
+      </div>
     </>
   );
 }
