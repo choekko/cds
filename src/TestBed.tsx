@@ -1,7 +1,7 @@
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react';
-import Button from '@/cds/components/Button';
-import GlobalStyle from '@/cds/global/GlobalStyle';
+import Button from './cds/components/Button';
+import GlobalStyle from './cds/global/GlobalStyle';
 
 function TestBed() {
   return (
